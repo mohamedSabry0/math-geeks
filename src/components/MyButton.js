@@ -1,14 +1,12 @@
+/* eslint react/prefer-stateless-function: 0 */
+/* eslint  react/prop-types: 0 */
+
 import React from 'react';
 
 class MyButton extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    return (
-      <button type="button" className="">{this.props.val}</button>
-    );
+    const { val, classN } = this.props;
+    return <button className={classN} type="button">{val}</button>;
   }
 }
 

@@ -1,0 +1,16 @@
+.Calculator {
+  display: flex;
+}
+
+.Numbers {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.Numbers > * {
+  flex: 1 1 33%;
+}
+.Zero {
+  flex-basis: 66.67%;
+}
