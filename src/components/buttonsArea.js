@@ -2,20 +2,27 @@ import PropTypes from 'prop-types';
 
 function SpecialOperations() {
   return (
-    <div className="special-container" />
+    <div className="special-container">
+      <Button op="C" />
+      <Button op="+/-" />
+      <Button op="%" />
+    </div>
   );
 }
 
 function Button(props) {
-  const { s, val } = props;
+  const { s, val, op } = props;
   return (
-    <button type="button" className={`w-${s}`}>{val}</button>
+    <button type="button" className={`w-${s}`}>
+      {val}
+      {op}
+    </button>
   );
 }
 
-Button.propTypes = { s: PropTypes.number, val: PropTypes.number };
+Button.propTypes = { s: PropTypes.number, val: PropTypes.number, op: PropTypes.string };
 
-Button.defaultProps = { s: 3, val: '.' };
+Button.defaultProps = { s: 3, val: '', op: '' };
 
 function Numbers() {
   return (
@@ -30,21 +37,27 @@ function Numbers() {
       <Button val={8} />
       <Button val={9} />
       <Button s={6} val={0} />
-      <Button />
+      <Button op="." />
     </div>
   );
 }
 
 function BasicOperations() {
   return (
-    <div className="basic-container" />
+    <div className="basic-container">
+      <Button op="/" />
+      <Button op="x" />
+      <Button op="-" />
+      <Button op="+" />
+      <Button op="=" />
+    </div>
   );
 }
 
 export default function ButtonsArea() {
   return (
-    <div className="flex">
-      <div className="flex">
+    <div className="all-btns">
+      <div className="g-btns">
         <SpecialOperations />
         <Numbers />
       </div>
