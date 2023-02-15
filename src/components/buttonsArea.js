@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function SpecialOperations() {
   return (
     <div className="special-container">
-      <Button op="C" />
+      <Button op="AC" />
       <Button op="+/-" />
       <Button op="%" />
     </div>
