@@ -1,43 +1,47 @@
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
 function SpecialOperations() {
   return (
     <div className="special-container">
-      <Button op="AC" />
-      <Button op="+/-" />
-      <Button op="%" />
+      <Button name="AC" />
+      <Button name="+/-" />
+      <Button name="%" />
     </div>
   );
 }
 
 function Button(props) {
-  const { s, val, op } = props;
+  const { s, name } = props;
+  function handleClick(event) {
+    const buttonName = event.target.innerText;
+    calculate({}, buttonName);
+  }
   return (
-    <button type="button" className={`w-${s}`}>
-      {val}
-      {op}
+    <button onClick={handleClick} type="button" className={`w-${s}`}>
+      {name}
     </button>
   );
 }
 
-Button.propTypes = { s: PropTypes.number, val: PropTypes.number, op: PropTypes.string };
+Button.propTypes = { s: PropTypes.number, name: PropTypes.string };
 
-Button.defaultProps = { s: 3, val: '', op: '' };
+Button.defaultProps = { s: 3, name: '' };
 
 function Numbers() {
   return (
     <div className="numbers-container">
-      <Button val={1} />
-      <Button val={2} />
-      <Button val={3} />
-      <Button val={4} />
-      <Button val={5} />
-      <Button val={6} />
-      <Button val={7} />
-      <Button val={8} />
-      <Button val={9} />
-      <Button s={6} val={0} />
-      <Button op="." />
+      <Button name="1" />
+      <Button name="2" />
+      <Button name="3" />
+      <Button name="4" />
+      <Button name="5" />
+      <Button name="6" />
+      <Button name="7" />
+      <Button name="8" />
+      <Button name="9" />
+      <Button s={6} name="0" />
+      <Button name="." />
     </div>
   );
 }
@@ -45,11 +49,11 @@ function Numbers() {
 function BasicOperations() {
   return (
     <div className="basic-container">
-      <Button op="/" />
-      <Button op="x" />
-      <Button op="-" />
-      <Button op="+" />
-      <Button op="=" />
+      <Button name="/" />
+      <Button name="x" />
+      <Button name="-" />
+      <Button name="+" />
+      <Button name="=" />
     </div>
   );
 }
