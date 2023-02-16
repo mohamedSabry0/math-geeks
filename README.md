@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- <img src="" alt="logo" width="140"  height="auto" /> -->
-  <br/>
+  <!-- <img src="./app_screenshot.png" alt="logo" width="140"  height="auto" />
+  <br/> -->
 
   <h3><b>Math Geeks</b></h3>
 
@@ -11,9 +11,10 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [Screenshot](#screenshot)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+    <!-- - [Key Features](#key-features) -->
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -30,9 +31,15 @@
 - [📝 License](#license)
 
 
-# 📖 [math-geeks] <a name="about-project"></a>
+# 📖 Math Geeks <a name="about-project"></a>
 
-**[math-geeks]** is a simple calculator built with <a href="https://reactjs.org/">React.js</a>
+**Math Geeks** is a simple calculator built with <a href="https://reactjs.org/">React.js</a>
+
+## Screenshot <a name="screenshot"></a>
+<div align='center'>
+  <img src="./app_screenshot.png" alt="logo" width="140"  height="auto" />
+    <br/>
+</div>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -87,7 +94,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git@github.com:mohamedSabry0/math-geeks.git
+  git clone git@github.com:mohamedSabry0/math-geeks.git
 ```
 
 ### Install
@@ -129,10 +136,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Mohamed Sabry**
-<!-- 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
+
+- GitHub: [@mohamedSabry0](https://github.com/mohamedSabry0)
+- Twitter: [@mohsmh0](https://twitter.com/mohsmh0)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-sabry0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,8 +176,6 @@ If you like this project it would be truly appreciated if you give it a ⭐️.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

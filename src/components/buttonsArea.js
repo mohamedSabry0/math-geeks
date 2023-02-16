@@ -1,67 +1,69 @@
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
-function SpecialOperations() {
+function Button({ s, name, calcState }) {
+  const { calcObj, setCalcObj } = calcState;
+  function handleClick(event) {
+    const buttonName = event.target.innerText;
+    setCalcObj(calculate(calcObj, buttonName));
+  }
   return (
-    <div className="special-container">
-      <Button op="AC" />
-      <Button op="+/-" />
-      <Button op="%" />
-    </div>
-  );
-}
-
-function Button(props) {
-  const { s, val, op } = props;
-  return (
-    <button type="button" className={`w-${s}`}>
-      {val}
-      {op}
+    <button onClick={handleClick} type="button" className={`w-${s}`}>
+      {name}
     </button>
   );
 }
 
-Button.propTypes = { s: PropTypes.number, val: PropTypes.number, op: PropTypes.string };
-
-Button.defaultProps = { s: 3, val: '', op: '' };
-
-function Numbers() {
-  return (
-    <div className="numbers-container">
-      <Button val={1} />
-      <Button val={2} />
-      <Button val={3} />
-      <Button val={4} />
-      <Button val={5} />
-      <Button val={6} />
-      <Button val={7} />
-      <Button val={8} />
-      <Button val={9} />
-      <Button s={6} val={0} />
-      <Button op="." />
-    </div>
-  );
-}
-
-function BasicOperations() {
-  return (
-    <div className="basic-container">
-      <Button op="/" />
-      <Button op="x" />
-      <Button op="-" />
-      <Button op="+" />
-      <Button op="=" />
-    </div>
-  );
-}
-
-export default function ButtonsArea() {
+function ButtonsArea({ calcState }) {
   return (
     <div className="all-btns">
       <div className="g-btns">
-        <SpecialOperations />
-        <Numbers />
+        <div className="special-container">
+          <Button name="AC" calcState={calcState} />
+          <Button name="+/-" calcState={calcState} />
+          <Button name="%" calcState={calcState} />
+        </div>
+        <div className="numbers-container">
+          <Button name="1" calcState={calcState} />
+          <Button name="2" calcState={calcState} />
+          <Button name="3" calcState={calcState} />
+          <Button name="4" calcState={calcState} />
+          <Button name="5" calcState={calcState} />
+          <Button name="6" calcState={calcState} />
+          <Button name="7" calcState={calcState} />
+          <Button name="8" calcState={calcState} />
+          <Button name="9" calcState={calcState} />
+          <Button s={6} name="0" calcState={calcState} />
+          <Button name="." calcState={calcState} />
+        </div>
       </div>
-      <BasicOperations />
+      <div className="basic-container">
+        <Button name="÷" calcState={calcState} />
+        <Button name="x" calcState={calcState} />
+        <Button name="-" calcState={calcState} />
+        <Button name="+" calcState={calcState} />
+        <Button name="=" calcState={calcState} />
+      </div>
     </div>
   );
 }
+
+const calcTypes = {
+  calcObj: PropTypes.shape({
+    total: PropTypes.string,
+    next: PropTypes.string,
+    operation: PropTypes.string,
+  }).isRequired,
+  setCalcObj: PropTypes.func.isRequired,
+};
+
+Button.propTypes = {
+  s: PropTypes.number,
+  name: PropTypes.string,
+  calcState: PropTypes.shape(calcTypes).isRequired,
+};
+Button.defaultProps = { s: 3, name: '' };
+
+ButtonsArea.propTypes = { calcState: PropTypes.shape(calcTypes).isRequired };
+
+export default ButtonsArea;
