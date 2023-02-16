@@ -139,7 +139,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 - GitHub: [@mohamedSabry0](https://github.com/mohamedSabry0)
 - Twitter: [@mohsmh0](https://twitter.com/mohsmh0)
-- LinkedIn: [LinkedIn]https://www.linkedin.com/in/mohamed-sabry0/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-sabry0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
