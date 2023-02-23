@@ -11,7 +11,7 @@ function Layout() {
     <>
       <nav>
         <ul>
-          <li><a href="/Home">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="calculator">Calculator</a></li>
           <li><a href="quote">Quote</a></li>
         </ul>
