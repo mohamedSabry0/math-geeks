@@ -1,5 +1,12 @@
 /* eslint-disable import/extensions */
-
+/* 
+reason for this is that I did try to change it several times
+and it gave me contradicting rules
+namely:
+- Missing file extension for "./components/Calculator"  import/extensions
+- Unexpected use of file extension "js" for "./components/home.js"   import/extensions
+- Missing file extension for "./components/home"
+*/
 import {
   BrowserRouter, Routes, Route, Outlet,
 } from 'react-router-dom';
