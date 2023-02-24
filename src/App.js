@@ -2,9 +2,9 @@ import {
   BrowserRouter, Routes, Route, Outlet,
 } from 'react-router-dom';
 import './App.css';
-import Calculator from './components/Calculator';
-import Home from './components/Home';
-import Quote from './components/Quote';
+import Calculator from './components/calculator';
+import Home from './components/home';
+import Quote from './components/quote';
 
 function Layout() {
   return (
