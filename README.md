@@ -172,7 +172,7 @@ If you like this project it would be truly appreciated if you give it a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgements <a name="acknowledgements"></a>
+## Acknowledgements <a name="acknowledgements"></a>
 > We seek knowledge from the cradle to the grave.
 
 I am grateful for these resources as they were a reason that I obtained a glimpse of their abundance of knowledge:

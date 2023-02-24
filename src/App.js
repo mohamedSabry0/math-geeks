@@ -8,7 +8,7 @@ namely:
 - Missing file extension for "./components/home"
 */
 import {
-  BrowserRouter, Routes, Route, Outlet,
+  BrowserRouter, Routes, Route, Outlet, NavLink,
 } from 'react-router-dom';
 import './App.css';
 import Calculator from './components/calculator';
@@ -23,9 +23,21 @@ function Layout() {
       <nav>
         <h1 className="heading">Math Geeks</h1>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="calculator">Calculator</a></li>
-          <li><a href="quote">Quote</a></li>
+          <li>
+            <NavLink to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="calculator">
+              Calculator
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="quote">
+              Quote
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <Outlet />
