@@ -2,8 +2,8 @@ export default function Quote() {
   return (
     <div>
       <p>
-
-        now Quote
+        ‘Obvious’ is the most dangerous word in mathematics.
+        — Eric Temple Bell, Scottish mathematician
       </p>
     </div>
   );
