@@ -1,10 +1,14 @@
+/* eslint-disable import/extensions */
+
 import {
   BrowserRouter, Routes, Route, Outlet,
 } from 'react-router-dom';
 import './App.css';
 import Calculator from './components/calculator';
-import Home from './components/home.js';
-import Quote from './components/quote.js';
+import Home from './components/home';
+import Quote from './components/quote';
+
+/* eslint-disable import/extensions */
 
 function Layout() {
   return (
