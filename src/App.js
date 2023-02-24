@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-/* 
+/*
 reason for this is that I did try to change it several times
 and it gave me contradicting rules
 namely:
