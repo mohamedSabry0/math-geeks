@@ -12,8 +12,8 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Calculator from './components/calculator';
-import Home from './components/home';
-import Quote from './components/quote';
+import Home from './components/Home';
+import Quote from './components/Quote';
 
 /* eslint-disable import/extensions */
 

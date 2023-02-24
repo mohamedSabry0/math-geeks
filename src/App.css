@@ -1,7 +1,8 @@
 .calculator-page {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calculator-container {
