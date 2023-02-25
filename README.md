@@ -26,8 +26,8 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 <!-- - [🔭 Future Features](#future-features)
-- [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq) -->
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 
@@ -160,7 +160,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mohamedSabry0/math-geeks/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,6 +169,17 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project it would be truly appreciated if you give it a ⭐️.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgements <a name="acknowledgements"></a>
+> We seek knowledge from the cradle to the grave.
+
+I am grateful for these resources as they were a reason that I obtained a glimpse of their abundance of knowledge:
+- [Microverse](https://www.microverse.org/)
+- [ReactJS Docs](https://reactjs.org/docs)
+- [React Router Docs](https://reactrouter.com/en/main)
+- I also thank other resources that might have slipped from my mind to mention, I really appreciate all the efforts in delivering helpful resources of knowledge.  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
