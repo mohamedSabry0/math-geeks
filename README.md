@@ -67,8 +67,8 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-(not yet deployed)
-<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+
+- [Live Demo Link](https://mathgeeks-4y9n.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
